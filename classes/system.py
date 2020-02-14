@@ -3,14 +3,15 @@ import random
 import os
 from gtts import gTTS
 import subprocess
+import webbrowser
 
-class Speak:
+class System:
 
     def __init__(self):
         pass
 
     def talkToMe(self, audio):
-        
+
         print(audio)
         for line in audio.splitlines():
             text_to_speech = gTTS(text=audio, lang='fr')
@@ -23,4 +24,8 @@ class Speak:
     def salut(self):
         hello = ["salut", "bonjour", "yo"]
         self.talkToMe(random.choice(hello))
-    
+
+        
+    def launch_webbrower(self):
+        webbrowser.open("http://www.google.fr")
+        
