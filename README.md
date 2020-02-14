@@ -6,6 +6,8 @@ V.I.K.I est un assistant (en référence à I robot) qui permet d'effectuer des 
 pip install -r requirements.txt
 python main.py
 ```
+Si problème d'installation de pyaudio, récupérer le ici : https://www.lfd.uci.edu/~gohlke/pythonlibs/
+et installer le ```python pip install nomFichier```
 
 ## Fonctionnalités
 -- à venir --
