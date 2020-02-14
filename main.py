@@ -1,6 +1,7 @@
 import speech_recognition as sr
 import os
-from classes import * as lib
+from classes.salut import Speak
+
 
 def command():
 
@@ -13,22 +14,23 @@ def command():
         audio = r.listen(source)
 
     try:
-        command = r.recognize_google(audio).lower()
-        print("Commande : " + command + '\n')
+        voice_command = r.recognize_google(audio, language="fr-FR").lower()
+        print("Commande : " + voice_command + '\n')
 
     # boucle si la commande passé n'est pas reconnu
     except sr.UnknownValueError:
         print("Commande inconnu")
-        command = myCommand()
+        voice_command = command()
 
-    return command
+    return voice_command
 
-def assistant():
+def assistant(voice_command):
     ''' Condition suivant ce que l'utilisateur dit '''
-    if "affiche salut" in command:
-        lib.salut()
+    if "affiche salut" in voice_command:
+        speak = Speak()
+        speak.salut()
 
-    elif "affiche sarce" in command:
+    elif "affiche sarce" in voice_command:
         print("sarce")
 
 
