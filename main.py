@@ -30,8 +30,7 @@ def assistant(voice_command):
         print("Salut")
 
     elif "dis bonjour" in voice_command:
-        speak = System()
-        speak.salut()
+        System.salut()
 
     elif "ouvre internet" in voice_command:
         open_brower = System()

@@ -1,34 +1,20 @@
-'''affiche salut en console'''
+'''
+Classe de toute les opérations système (tri fichier, backup, enregistrer fichier ...)
+'''
 import random
 import os
-from gtts import gTTS
 import subprocess
 import webbrowser
+from classes.viki_voice import Voice
 
 class System:
 
-    def __init__(self):
-        pass
-
-    def talkToMe(self, audio):
-
-        print(audio)
-        for line in audio.splitlines():
-            text_to_speech = gTTS(text=audio, lang='fr')
-            text_to_speech.save('audio.mp3')
-            os.startfile('audio.mp3')
-            # PLAYERPATH = r"C:\Program Files\VideoLAN\VLC\vlc.exe"
-            # FILEPATH = r"D:\DEV\audio.mp3"
-            # subprocess.call([PLAYERPATH, FILEPATH])
-
-    def salut(self):
+    def salut():
         hello = ["salut", "bonjour", "yo"]
-        self.talkToMe(random.choice(hello))
-
-        
-    def launch_webbrower(self):
+        Voice.talkToMe(random.choice(hello))
+   
+    def launch_webbrower():
         webbrowser.open("http://www.google.fr")
 
 if __name__ == "__main__":
     print("test classe system...")
-        
