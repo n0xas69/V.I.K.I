@@ -1,6 +1,6 @@
 import speech_recognition as sr
 import os
-from classes.salut import Speak
+from classes.salut import System
 
 
 def command():
@@ -27,11 +27,15 @@ def command():
 def assistant(voice_command):
     ''' Condition suivant ce que l'utilisateur dit '''
     if "affiche salut" in voice_command:
-        speak = Speak()
+        print("Salut")
+
+    elif "dis bonjour" in voice_command:
+        speak = System()
         speak.salut()
 
-    elif "affiche sarce" in voice_command:
-        print("sarce")
+    elif "ouvre internet" in voice_command:
+        open_brower = System()
+        open_brower.launch_webbrower()
 
 
 while True:
