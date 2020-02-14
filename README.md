@@ -3,7 +3,7 @@ V.I.K.I est un assistant (en référence à I robot) qui permet d'effectuer des 
 
 ## Utilisation
 Python 3 requis
-```python
+```
 git clone https://github.com/neiwak/V.I.K.I.git
 pip install -r requirements.txt
 python main.py
