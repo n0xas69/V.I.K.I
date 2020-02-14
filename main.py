@@ -1,6 +1,6 @@
 import speech_recognition as sr
 import os
-from classes.salut import System
+from classes.system import System
 
 
 def command():
