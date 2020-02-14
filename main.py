@@ -32,4 +32,5 @@ def assistant():
         print("sarce")
 
 
-
+while True:
+    assistant(command())
