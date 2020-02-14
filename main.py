@@ -1,5 +1,6 @@
 import speech_recognition as sr
 import os
+from classes import * as lib
 
 def command():
 
@@ -25,7 +26,7 @@ def command():
 def assistant():
     ''' Condition suivant ce que l'utilisateur dit '''
     if "affiche salut" in command:
-        print("Salut")
+        lib.salut()
 
     elif "affiche sarce" in command:
         print("sarce")
