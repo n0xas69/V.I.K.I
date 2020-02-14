@@ -28,4 +28,7 @@ class System:
         
     def launch_webbrower(self):
         webbrowser.open("http://www.google.fr")
+
+if __name__ == "__main__":
+    print("test classe system...")
         
