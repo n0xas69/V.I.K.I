@@ -1,7 +1,7 @@
 # :robot: V.I.K.I pour (Virtual Interactive Kinetic Intelligence)
 V.I.K.I est un assistant (en référence à I robot) qui permet d'effectuer des tâches à l'aide de votre voix. L'assistant est codé en python, nous utilisons Black code formatter pour formatter les fichiers python
 
-## :page_facing_up: Utilisation
+## :scroll: Utilisation
 Python 3 requis
 ```
 git clone https://github.com/neiwak/V.I.K.I.git
