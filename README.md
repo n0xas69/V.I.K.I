@@ -11,7 +11,7 @@ python main.py
 Si problème d'installation de pyaudio, récupérer le ici : https://www.lfd.uci.edu/~gohlke/pythonlibs/
 et installer le ```pip install nomFichier```
 
-## Fonctionnalités
+## Fonctionnalités :sound:
 
 :speech_balloon: *"Ouvre internet"*  
 Ouvre google sur le navigateur par défaut
