@@ -9,7 +9,7 @@ pip install -r requirements.txt
 python main.py
 ```
 Si problème d'installation de pyaudio, récupérer le ici : https://www.lfd.uci.edu/~gohlke/pythonlibs/
-et installer le ```pip install nomFichier```
+installer le ```pip install PyAudio‑0.2.11‑cp38‑cp38‑win32.whl```
 
 ## :sound: Fonctionnalités 
 
