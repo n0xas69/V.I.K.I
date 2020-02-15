@@ -12,4 +12,7 @@ Si problème d'installation de pyaudio, récupérer le ici : https://www.lfd.uci
 et installer le ```pip install nomFichier```
 
 ## Fonctionnalités
+
+:loudspeaker: Ouvre internet
+
 -- à venir --
