@@ -13,6 +13,6 @@ et installer le ```pip install nomFichier```
 
 ## Fonctionnalités
 
-:loudspeaker: Ouvre internet
+:loudspeaker: *Ouvre internet*
 
 -- à venir --
