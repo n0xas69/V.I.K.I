@@ -3,7 +3,7 @@ V.I.K.I est un assistant (en référence à I robot) qui permet d'effectuer des 
 
 ## :scroll: Utilisation
 ### Prérequis :
-Python 3 : https://www.python.org/downloads/  
+Python 3.8 : https://www.python.org/downloads/  
 GIT : https://git-scm.com/
 ```
 git clone https://github.com/neiwak/V.I.K.I.git
