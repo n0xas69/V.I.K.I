@@ -2,7 +2,9 @@
 V.I.K.I est un assistant (en référence à I robot) qui permet d'effectuer des tâches à l'aide de votre voix. L'assistant est codé en python, nous utilisons Black code formatter pour formatter les fichiers python
 
 ## :scroll: Utilisation
-Python 3 requis
+### Prérequis :
+Python 3 : https://www.python.org/downloads/
+GIT : https://git-scm.com/
 ```
 git clone https://github.com/neiwak/V.I.K.I.git
 pip install -r requirements.txt
