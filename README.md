@@ -13,6 +13,7 @@ et installer le ```pip install nomFichier```
 
 ## Fonctionnalités
 
-:loudspeaker: *Ouvre internet*
+:speech_balloon: *Ouvre internet*
+Ouvre google sur le navigateur par défaut
 
 -- à venir --
