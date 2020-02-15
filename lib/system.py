@@ -5,11 +5,11 @@ import random
 import os
 import subprocess
 import webbrowser
-from lib.viki_voice import Voice
+import lib.viki_voice as viki
 
 def salut():
     hello = ["salut", "bonjour", "yo"]
-    Voice.talkToMe(random.choice(hello))
+    viki.talk(random.choice(hello))
 
 def launch_webbrower():
     webbrowser.open("http://www.google.fr")
