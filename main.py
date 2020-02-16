@@ -51,7 +51,6 @@ def assistant(voice_command):
         # On appel la méthode command pour affecter ce qu'on dit à website
         website = command(first_command=False)
         sys.launch_webbrower(website)
-        print(website)
 
 
 while True:
