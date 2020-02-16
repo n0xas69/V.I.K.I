@@ -8,7 +8,7 @@ import webbrowser
 import lib.viki_voice as viki
 
 def salut():
-    hello = ["salut", "bonjour", "yo"]
+    hello = ["salut", "bonjour Talyov", "yo"]
     viki.talk(random.choice(hello))
 
 def launch_webbrower():

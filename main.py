@@ -1,7 +1,15 @@
+"""
+
+Créateurs : 
+Les sarces
+
+Date de création :
+le 16/02/2020
+
+"""
 import speech_recognition as sr
 import os
 import lib.system as sys
-
 
 def command():
 
@@ -17,7 +25,7 @@ def command():
         voice_command = r.recognize_google(audio, language="fr-FR").lower()
         print("Commande : " + voice_command + "\n")
 
-    # si la commande passé n'est pas reconnu
+    # Si la commande passé n'est pas reconnu
     except sr.UnknownValueError:
         print("Commande inconnu")
         voice_command = command()
@@ -26,7 +34,7 @@ def command():
 
 
 def assistant(voice_command):
-    """ Condition suivant ce que l'utilisateur dit """
+    # Condition suivant ce que l'utilisateur dit
     if "affiche salut" in voice_command:
         print("Salut")
 
@@ -40,8 +48,5 @@ def assistant(voice_command):
 while True:
     assistant(command())
 
-<<<<<<< HEAD
 # test2
-=======
 #Test 1
->>>>>>> f0d8f0e140996a380b224f0783a9c181af6db157
