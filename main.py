@@ -11,10 +11,7 @@ import speech_recognition as sr
 import os
 import lib.system as sys
 import lib.viki_voice as viki
-
-list_command = {1 : "affiche salut",
-                2 : "dis bonjour",
-                3 : "ouvre internet"}
+import lib.commands as com
 
 
 def command():
@@ -29,7 +26,7 @@ def command():
 
     try:
         voice_command = r.recognize_google(audio, language="fr-FR").lower()
-        if voice_command not in list_command.values():
+        if voice_command not in com.list_command.values():
             viki.talk("Commande inconnu")
         print("Commande : " + voice_command + "\n")
 
@@ -42,13 +39,13 @@ def command():
 
 def assistant(voice_command):
     # Condition suivant ce que l'utilisateur dit
-    if list_command.get(1) in voice_command:
+    if com.list_command.get(1) in voice_command:
         print("Salut")
 
-    elif list_command.get(2) in voice_command:
+    elif com.list_command.get(2) in voice_command:
         sys.salut()
 
-    elif list_command.get(3) in voice_command:
+    elif com.list_command.get(3) in voice_command:
         sys.launch_webbrower()
 
 
