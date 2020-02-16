@@ -14,6 +14,10 @@ def salut():
 def launch_webbrower():
     webbrowser.open("http://www.google.fr")
 
+def meteo():
+    pass
+
 
 if __name__ == "__main__":
     print("test classe system...")
+
