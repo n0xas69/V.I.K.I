@@ -14,7 +14,7 @@ import lib.viki_voice as viki
 import lib.commands as com
 
 # first_commnand nous indique si choix multiple
-def command(first_command=True, start=False):
+def command(first_command=True):
 
     r = sr.Recognizer()
 
