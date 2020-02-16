@@ -1,12 +1,3 @@
-"""
-
-Créateurs : 
-Les sarces
-
-Date de création :
-le 16/02/2020
-
-"""
 import speech_recognition as sr
 import os
 import lib.system as sys
