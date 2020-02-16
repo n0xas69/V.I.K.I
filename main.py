@@ -39,3 +39,5 @@ def assistant(voice_command):
 
 while True:
     assistant(command())
+
+#Test 1
