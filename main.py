@@ -40,4 +40,8 @@ def assistant(voice_command):
 while True:
     assistant(command())
 
+<<<<<<< HEAD
 # test2
+=======
+#Test 1
+>>>>>>> f0d8f0e140996a380b224f0783a9c181af6db157
