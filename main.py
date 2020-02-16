@@ -14,7 +14,7 @@ import lib.viki_voice as viki
 import lib.commands as com
 
 # first_commnand nous indique si choix multiple
-def command(first_command=True):
+def command(first_command=True, start=False):
 
     r = sr.Recognizer()
 
@@ -26,6 +26,7 @@ def command(first_command=True):
 
     try:
         voice_command = r.recognize_google(audio, language="fr-FR").lower()
+
         if first_command == True:
             if voice_command not in com.list_command.values():
                 viki.talk("Commande inconnu")
@@ -39,18 +40,22 @@ def command(first_command=True):
     return voice_command
 
 def assistant(voice_command):
+
     # Condition suivant ce que l'utilisateur dit
     if com.list_command.get(1) in voice_command:
-        print("Salut")
+            print("Salut")
 
     elif com.list_command.get(2) in voice_command:
-        sys.salut()
+            sys.salut()
 
     elif com.list_command.get(3) in voice_command:
-        viki.talk("Quelle page voulez-vous ouvrir ?")
-        # On appel la méthode command pour affecter ce qu'on dit à website
-        website = command(first_command=False)
-        sys.launch_webbrower(website)
+            viki.talk("Quelle page voulez-vous ouvrir ?")
+            # On appel la méthode command pour affecter ce qu'on dit à website
+            website = command(first_command=False)
+            sys.launch_webbrower(website)
+
+    elif com.list_command.get(4) in voice_command:
+        exit()
 
 
 while True:
