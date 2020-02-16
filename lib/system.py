@@ -11,8 +11,13 @@ def salut():
     hello = ["salut", "bonjour Talyov", "yo"]
     viki.talk(random.choice(hello))
 
-def launch_webbrower():
-    webbrowser.open("http://www.google.fr")
+def launch_webbrower(website=None):
+
+    if website == "page jaune" or "pages jaunes" or "pagesjaunes":
+        webbrowser.open("https://www.pagesjaunes.fr/")
+    else:
+        webbrowser.open("http://www.google.fr")
+    
 
 def meteo():
     pass

@@ -13,8 +13,8 @@ import lib.system as sys
 import lib.viki_voice as viki
 import lib.commands as com
 
-
-def command():
+# first_commnand nous indique si choix multiple
+def command(first_command=True):
 
     r = sr.Recognizer()
 
@@ -26,9 +26,10 @@ def command():
 
     try:
         voice_command = r.recognize_google(audio, language="fr-FR").lower()
-        if voice_command not in com.list_command.values():
-            viki.talk("Commande inconnu")
-        print("Commande : " + voice_command + "\n")
+        if first_command == True:
+            if voice_command not in com.list_command.values():
+                viki.talk("Commande inconnu")
+            print("Commande : " + voice_command + "\n")
 
     # Si viki ne comprends pas
     except sr.UnknownValueError:
@@ -46,7 +47,10 @@ def assistant(voice_command):
         sys.salut()
 
     elif com.list_command.get(3) in voice_command:
-        sys.launch_webbrower()
+        viki.talk("Quelle page voulez-vous ouvrir ?")
+        r = sr.Recognizer()
+        website = command(False)
+        sys.launch_webbrower(website)
 
 
 
