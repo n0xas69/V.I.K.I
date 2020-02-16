@@ -54,7 +54,6 @@ def assistant(voice_command):
         print(website)
 
 
-
 while True:
     assistant(command())
 

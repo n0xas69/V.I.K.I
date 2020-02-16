@@ -12,13 +12,13 @@ def salut():
     viki.talk(random.choice(hello))
 
 def launch_webbrower(website):
-    if website == "impot" or "impots" or "impôt":
+    if website in "impots" or website in "impôts":
         webbrowser.open("https://www.impots.gouv.fr/portail/")
 
-    elif website == "page jaune" or "pages jaunes" or "pagesjaunes":
+    elif website in "pagesjaunes" or website in "pages jaunes":
         webbrowser.open("https://www.pagesjaunes.fr/")
 
-    elif website == "facebook" or "face book":
+    elif website == "facebook":
         webbrowser.open("https://www.facebook.com/")
 
     else:
