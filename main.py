@@ -48,9 +48,10 @@ def assistant(voice_command):
 
     elif com.list_command.get(3) in voice_command:
         viki.talk("Quelle page voulez-vous ouvrir ?")
-        r = sr.Recognizer()
-        website = command(False)
+        # On appel la méthode command pour affecter ce qu'on dit à website
+        website = command(first_command=False)
         sys.launch_webbrower(website)
+        print(website)
 
 
 
