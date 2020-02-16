@@ -41,3 +41,4 @@ while True:
     assistant(command())
 
     #Test
+    #test2
