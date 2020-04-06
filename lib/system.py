@@ -25,8 +25,6 @@ def launch_webbrower(website):
         webbrowser.open("http://www.google.fr")
     
 
-def meteo():
-    pass
 
 
 if __name__ == "__main__":

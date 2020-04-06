@@ -3,6 +3,7 @@ import os
 import lib.system as sys
 import lib.viki_voice as viki
 import lib.commands as com
+import lib.weather as weather
 
 # first_commnand nous indique si choix multiple
 def command(first_command=True):
@@ -47,6 +48,11 @@ def assistant(voice_command):
 
     elif com.list_command.get(4) in voice_command:
         exit()
+    
+    elif com.list_command.get(5) in voice_command:
+        city = weather.get_town()
+        temp = weather.get_weather(city)
+        viki.talk(f"Il fait {temp}° à {city}")
 
 
 while True:
