@@ -19,9 +19,14 @@ def get_weather(town):
     temp = weaver.json()
     w = temp.get("main")
     t = w.get("temp") - 273.15 # conversion en degré celcius
-    return format(t, ".0f")
+
+    x = temp.get("weather")
+    for d in x:
+        sky = d.get("description")
+    
+    return format(t, ".0f"), sky
 
 if __name__ == "__main__":
     city = get_town()
     temp = get_weather(city)
-    print(f"Il fait {temp}° à {city}")
+    print(f"{city} : {temp[0]}° , {temp[1]}")
