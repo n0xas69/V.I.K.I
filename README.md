@@ -26,3 +26,14 @@ VIKI donne la météo suivant votre position géographique
 -- à venir --  
 :speech_balloon: *"Donne moi le meilleurs prix pour : "*  
 VIKI recherche et compare les produits sur différents site e-commerce et vous propose le meilleurs prix.
+
+:speech_balloon: *"Viki backup"*  
+VIKI effectue une sauvegarde de vos dossiers sélectionné dans l'emplacement de backup paramétré
+
+:speech_balloon: *"Viki vérifie internet"*  
+VIKI fait un checkup de votre ligne et vérifie le débit. Elle vérifie également les services (FAI) qui ont actuellement des problèmes.
+
+:speech_balloon: *"Viki coule un café"*  
+VIKI active votre caftière grâce à un raspberry PI (tuto pour branchement à venir)
+
+
