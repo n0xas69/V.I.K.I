@@ -4,7 +4,6 @@ V.I.K.I est un assistant (en référence à I robot) qui permet d'effectuer des 
 ## :scroll: Utilisation
 ### Prérequis :
 Python 3.8 : https://www.python.org/downloads/  
-GIT : https://git-scm.com/
 ```
 git clone https://github.com/neiwak/V.I.K.I.git
 pip install -r requirements.txt
@@ -21,4 +20,9 @@ Ouvre google sur le navigateur par défaut
 :speech_balloon: *"Dis bonjour"*  
 VIKI vous dis bonjour
 
+:speech_balloon: *"Météo"*  
+VIKI donne la météo suivant votre position géographique
+
 -- à venir --
+:speech_balloon: *"Donne moi le meilleurs pris pour : "*  
+VIKI recherche et compare les produits sur différents site e-commerce et vous propose le meilleurs prix.
