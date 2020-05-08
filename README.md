@@ -23,6 +23,6 @@ VIKI vous dis bonjour
 :speech_balloon: *"Météo"*  
 VIKI donne la météo suivant votre position géographique
 
--- à venir --
-:speech_balloon: *"Donne moi le meilleurs pris pour : "*  
+-- à venir --  
+:speech_balloon: *"Donne moi le meilleurs prix pour : "*  
 VIKI recherche et compare les produits sur différents site e-commerce et vous propose le meilleurs prix.
